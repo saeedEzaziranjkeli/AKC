@@ -1,0 +1,16 @@
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.AssemblyInfo.cs
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Infrastructure.deps.json
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Infrastructure.runtimeconfig.json
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Infrastructure.runtimeconfig.dev.json
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Infrastructure.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Infrastructure.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Domain.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\bin\Debug\netcoreapp3.1\AK.Domain.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.csproj.CopyComplete
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Infrastructure\obj\Debug\netcoreapp3.1\AK.Infrastructure.genruntimeconfig.cache

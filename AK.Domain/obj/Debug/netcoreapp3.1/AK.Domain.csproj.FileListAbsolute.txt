@@ -1,0 +1,10 @@
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.csproj.AssemblyReference.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.AssemblyInfoInputs.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.AssemblyInfo.cs
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.csproj.CoreCompileInputs.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\bin\Debug\netcoreapp3.1\AK.Domain.deps.json
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\bin\Debug\netcoreapp3.1\AK.Domain.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\bin\Debug\netcoreapp3.1\AK.Domain.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Domain\obj\Debug\netcoreapp3.1\AK.Domain.pdb

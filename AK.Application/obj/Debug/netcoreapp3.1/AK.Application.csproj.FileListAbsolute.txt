@@ -1,0 +1,15 @@
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.csproj.AssemblyReference.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.AssemblyInfoInputs.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.AssemblyInfo.cs
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.csproj.CoreCompileInputs.cache
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Application.deps.json
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Application.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Application.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Domain.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Infrastructure.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Domain.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Application\bin\Debug\netcoreapp3.1\AK.Infrastructure.pdb
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.csproj.CopyComplete
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.dll
+C:\Users\saeeduser\source\repos\AKC\AK.Application\obj\Debug\netcoreapp3.1\AK.Application.pdb

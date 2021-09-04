@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Automapper.extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AK.Domain\AK.Domain.csproj" />
+    <ProjectReference Include="..\AK.Infrastructure\AK.Infrastructure.csproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
