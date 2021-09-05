@@ -9,7 +9,7 @@ namespace AK.Domain.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        Task<IReadOnlyList<T>> GetAllAsync();
+        Task<List<T>> GetAllAsync();
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string includeString = null,

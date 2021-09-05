@@ -16,6 +16,7 @@ namespace AK.Application.Queries.Drug
             Label = model.Label;
             Description = model.Description;
             Price = model.Price;
+            Id = model.Id;
         }
         public DrugQueryBase()
         {

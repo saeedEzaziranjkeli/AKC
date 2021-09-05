@@ -10,5 +10,10 @@ namespace AK.Application.Commands.Drug
         public DrugCreateCommand(DrugDto model) : base(model)
         {
         }
+
+        public DrugCreateCommand()
+        {
+            
+        }
     }
 }

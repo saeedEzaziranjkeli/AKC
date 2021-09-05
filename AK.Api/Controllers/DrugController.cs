@@ -25,9 +25,9 @@ namespace AK.Api.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
-        private readonly ILogger _logger;
+        private readonly ILogger<DrugController> _logger;
 
-        public DrugController(IMediator mediator, IMapper mapper, ILogger logger)
+        public DrugController(IMediator mediator, IMapper mapper, ILogger<DrugController> logger)
         {
             _mediator = mediator;
             _mapper = mapper;
@@ -42,7 +42,7 @@ namespace AK.Api.Controllers
             if (!string.IsNullOrEmpty(searchString))
             {
                 result = result.Where(s => s.Label.Contains(searchString)
-                                           || s.Description.Contains(searchString)).ToList();
+                                           || s.Code.Contains(searchString)).ToList();
             }
 
             result = sortOrder switch
@@ -54,7 +54,7 @@ namespace AK.Api.Controllers
             };
             int pageSize = 5;
             var pageNumber = 1;
-            var response = await PaginatedList<DrugDto>.CreateAsync(result.AsQueryable(), pageNumber, pageSize);
+            var response = await PaginatedList<DrugDto>.CreateAsync(result, pageNumber, pageSize);
             return Ok(response);
         }
 
@@ -82,6 +82,11 @@ namespace AK.Api.Controllers
             if (drug is null)
             {
                 return BadRequest("Drug model is null");
+            }
+
+            if (string.IsNullOrWhiteSpace(drug.Id))
+            {
+                drug.Id = Guid.NewGuid().ToString();
             }
             var modelToSend = _mapper.Map<DrugCreateCommand>(drug);
             var result = await _mediator.Send(modelToSend);

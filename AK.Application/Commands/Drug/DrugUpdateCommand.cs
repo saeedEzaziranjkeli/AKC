@@ -11,5 +11,10 @@ namespace AK.Application.Commands.Drug
         {
 
         }
+
+        public DrugUpdateCommand()
+        {
+            
+        }
     }
 }

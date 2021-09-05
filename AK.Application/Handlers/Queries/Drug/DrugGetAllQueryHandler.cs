@@ -11,7 +11,7 @@ using MediatR;
 
 namespace AK.Application.Handlers.Queries.Drug
 {
-    public class DrugGetAllQueryHandler : IRequestHandler<DrugGetAllQuery, IReadOnlyList<DrugDto>>
+    public class DrugGetAllQueryHandler : IRequestHandler<DrugGetAllQuery, List<DrugDto>>
     {
         private readonly IMapper _mapper;
         private readonly IDrugRepository _repo;
@@ -21,11 +21,11 @@ namespace AK.Application.Handlers.Queries.Drug
             _mapper = mapper;
             _repo = repo;
         }
-        public async Task<IReadOnlyList<DrugDto>> Handle(DrugGetAllQuery request, CancellationToken cancellationToken)
+        public async Task<List<DrugDto>> Handle(DrugGetAllQuery request, CancellationToken cancellationToken)
         {
             if (cancellationToken.IsCancellationRequested) return null;
             var result = await _repo.GetAllAsync();
-            var modelDto = _mapper.Map<IReadOnlyList<DrugDto>>(result);
+            var modelDto = _mapper.Map<List<DrugDto>>(result);
             return modelDto;
         }
     }

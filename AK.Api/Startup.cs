@@ -36,7 +36,7 @@ namespace AK.Api
             );
 
             services.AddDbContext<EFDbContext>((s) =>
-                    s.UseSqlServer(Configuration.GetConnectionString(ApiConstant.DbConnectionKey)), ServiceLifetime.Singleton
+                    s.UseSqlServer(Configuration.GetConnectionString(ApiConstant.DbConnectionKey)), ServiceLifetime.Scoped
             );
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IUserRepository, UserRepository>();

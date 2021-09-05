@@ -34,7 +34,7 @@ namespace AK.Api.Controllers
         }
 
 
-        [HttpGet("{id}", Name = "GetUser")]
+        [HttpGet("{id}",Name = "GetUser")]
         public async Task<IActionResult> Get(Guid id)
         {
             var model = new GetUserByIdQuery(id);
@@ -42,29 +42,6 @@ namespace AK.Api.Controllers
             return Ok(result ??= null);
         }
 
-        [HttpGet]
-        [Route("users")]
-        public async Task<IActionResult> GetUsersWithPagination([FromQuery] string searchString,[FromQuery] string sortOrder)
-        {
-            var model = new List<UserDto>();
-            if (!string.IsNullOrEmpty(searchString))
-            {
-                model = model.Where(s => s.Firstname.Contains(searchString)
-                                         || s.Name.Contains(searchString)).ToList();
-            }
-
-            model = sortOrder switch
-            {
-                "name_desc" => model.OrderByDescending(s => s.Name).ToList(),
-                "Date" => model.OrderBy(s => s.Birthday).ToList(),
-                "date_desc" => model.OrderByDescending(s => s.Birthday).ToList(),
-                _ => model.OrderBy(s => s.Name).ToList()
-            };
-            int pageSize = 3;
-            var pageNumber = 3;
-            var response = await PaginatedList<UserDto>.CreateAsync(model.AsQueryable(), pageNumber, pageSize);
-            return Ok(response);
-        }
 
         [HttpPost]
         [Route("Add")]

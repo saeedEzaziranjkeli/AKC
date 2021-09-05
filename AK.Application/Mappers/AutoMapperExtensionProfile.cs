@@ -28,7 +28,8 @@ namespace AK.Application.Mappers
             CreateMap<UserCommandBase, UserAddCommand>().ReverseMap();
             CreateMap<UserCommandBase, UserDto>().ReverseMap();
             //Map Drug entities
-            CreateMap<List<Drug>, List<DrugDto>>().ReverseMap();
+            //CreateMap<List<Drug>, List<DrugDto>>().ReverseMap();
+            //CreateMap<IReadOnlyList<Drug>, List<DrugDto>>().ReverseMap();
             CreateMap<Drug, DrugDto>().ReverseMap();
             CreateMap<Drug, DrugCreateCommand>().ReverseMap();
             CreateMap<Drug, DrugUpdateCommand>().ReverseMap();

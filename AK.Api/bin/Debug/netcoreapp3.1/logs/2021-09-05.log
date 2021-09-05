@@ -1,3 +1,105 @@
 2021-09-05 10:33:26.3095 WARN No type was specified for the decimal column 'Price' on entity type 'Drug'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
 2021-09-05 10:40:08.2566 WARN No type was specified for the decimal column 'Price' on entity type 'Drug'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
 2021-09-05 10:40:29.9086 WARN No type was specified for the decimal column 'Price' on entity type 'Drug'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2021-09-05 10:48:56.5750 INFO Now listening on: http://localhost:5013
+2021-09-05 10:48:56.6604 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 10:48:56.6945 INFO Hosting environment: Development
+2021-09-05 10:48:56.7887 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 10:50:56.1514 INFO Now listening on: http://localhost:5013
+2021-09-05 10:50:56.1952 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 10:50:56.2088 INFO Hosting environment: Development
+2021-09-05 10:50:56.2214 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 10:51:30.4092 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 10:53:43.1220 INFO Now listening on: http://localhost:5013
+2021-09-05 10:53:43.1734 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 10:53:43.1881 INFO Hosting environment: Development
+2021-09-05 10:53:43.2188 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 10:53:52.8128 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 10:54:16.9116 INFO Now listening on: http://localhost:5013
+2021-09-05 10:54:16.9481 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 10:54:16.9650 INFO Hosting environment: Development
+2021-09-05 10:54:16.9650 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 10:55:44.5387 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 10:56:19.2182 INFO Now listening on: http://localhost:5013
+2021-09-05 10:56:19.2676 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 10:56:19.2815 INFO Hosting environment: Development
+2021-09-05 10:56:19.2815 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 10:56:45.7395 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 10:59:17.2091 INFO Now listening on: http://localhost:5013
+2021-09-05 10:59:17.2733 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 10:59:17.2819 INFO Hosting environment: Development
+2021-09-05 10:59:17.2819 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 10:59:25.5340 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:03:02.0657 INFO Now listening on: http://localhost:5013
+2021-09-05 11:03:02.1114 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:03:02.1114 INFO Hosting environment: Development
+2021-09-05 11:03:02.1328 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:03:15.9283 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:04:06.2138 INFO Now listening on: http://localhost:5013
+2021-09-05 11:04:06.3038 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:04:06.3252 INFO Hosting environment: Development
+2021-09-05 11:04:06.3526 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:04:22.0765 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:09:00.7546 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:09:48.2736 INFO Now listening on: http://localhost:5013
+2021-09-05 11:09:48.3098 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:09:48.3197 INFO Hosting environment: Development
+2021-09-05 11:09:48.3282 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:10:36.3050 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:14:27.1713 WARN Property 'Id' on entity type 'Drug' is part of a primary or alternate key but has a constant default value set. Constant default values are not useful for primary or alternate keys since these properties must always have non-null unique values.
+2021-09-05 11:15:07.3437 WARN Property 'Id' on entity type 'Drug' is part of a primary or alternate key but has a constant default value set. Constant default values are not useful for primary or alternate keys since these properties must always have non-null unique values.
+2021-09-05 11:16:24.5549 INFO Now listening on: http://localhost:5013
+2021-09-05 11:16:24.6855 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:16:24.7136 INFO Hosting environment: Development
+2021-09-05 11:16:24.7438 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:19:51.7506 INFO Now listening on: http://localhost:5013
+2021-09-05 11:19:51.7914 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:19:51.8040 INFO Hosting environment: Development
+2021-09-05 11:19:51.8040 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:21:51.3768 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:22:40.3381 INFO Now listening on: http://localhost:5013
+2021-09-05 11:22:40.3961 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:22:40.3961 INFO Hosting environment: Development
+2021-09-05 11:22:40.4169 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:23:48.7594 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:25:07.7527 INFO Now listening on: http://localhost:5013
+2021-09-05 11:25:07.7985 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:25:07.8101 INFO Hosting environment: Development
+2021-09-05 11:25:07.8101 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:29:44.7768 INFO Now listening on: http://localhost:5013
+2021-09-05 11:29:44.8122 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:29:44.8315 INFO Hosting environment: Development
+2021-09-05 11:29:44.8418 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:31:24.3203 INFO Now listening on: http://localhost:5013
+2021-09-05 11:31:24.3726 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:31:24.3902 INFO Hosting environment: Development
+2021-09-05 11:31:24.3902 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:32:53.0608 INFO Now listening on: http://localhost:5013
+2021-09-05 11:32:53.0998 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:32:53.1236 INFO Hosting environment: Development
+2021-09-05 11:32:53.2332 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:35:44.7890 INFO Now listening on: http://localhost:5013
+2021-09-05 11:35:44.8249 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:35:44.8249 INFO Hosting environment: Development
+2021-09-05 11:35:44.8438 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:38:14.3818 INFO Now listening on: http://localhost:5013
+2021-09-05 11:38:14.4251 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:38:14.4335 INFO Hosting environment: Development
+2021-09-05 11:38:14.4335 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:38:55.0370 INFO Now listening on: http://localhost:5013
+2021-09-05 11:38:55.0738 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:38:55.0738 INFO Hosting environment: Development
+2021-09-05 11:38:55.0738 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:39:22.6786 ERROR An unhandled exception has occurred while executing the request.
+2021-09-05 11:41:47.1555 INFO Now listening on: http://localhost:5013
+2021-09-05 11:41:47.2047 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:41:47.2047 INFO Hosting environment: Development
+2021-09-05 11:41:47.2179 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:44:53.0930 INFO Now listening on: http://localhost:5013
+2021-09-05 11:44:53.1487 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:44:53.1577 INFO Hosting environment: Development
+2021-09-05 11:44:53.1577 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
+2021-09-05 11:46:25.1141 INFO Now listening on: http://localhost:5013
+2021-09-05 11:46:25.1502 INFO Application started. Press Ctrl+C to shut down.
+2021-09-05 11:46:25.1614 INFO Hosting environment: Development
+2021-09-05 11:46:25.1614 INFO Content root path: C:\Users\saeeduser\source\repos\AKC\AK.Api
