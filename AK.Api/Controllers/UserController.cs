@@ -1,18 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using AK.Api.Extensions;
 using AK.Application.Commands.User;
 using AK.Application.DTOs;
-using AK.Application.Queries;
 using AK.Application.Queries.User;
-using AK.Domain.Models;
 using Microsoft.Extensions.Logging;
 
 namespace AK.Api.Controllers
@@ -24,9 +18,9 @@ namespace AK.Api.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
-        private readonly ILogger _logger;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IMediator mediator, IMapper mapper,ILogger logger)
+        public UserController(IMediator mediator, IMapper mapper,ILogger<UserController> logger)
         {
             _mediator = mediator;
             _mapper = mapper;

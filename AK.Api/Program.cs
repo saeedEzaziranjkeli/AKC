@@ -11,7 +11,7 @@ namespace AK.Api
         {
             CreateHostBuilder(args).Build().Run();
         }
-
+        // Add NLog Config to log 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureLogging((hostingContext, logging) =>

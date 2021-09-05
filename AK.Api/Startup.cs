@@ -31,20 +31,24 @@ namespace AK.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            // Newtonsoft setting
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
-
+            //Add SqlServer Db Context
             services.AddDbContext<EFDbContext>((s) =>
                     s.UseSqlServer(Configuration.GetConnectionString(ApiConstant.DbConnectionKey)), ServiceLifetime.Scoped
             );
+            //Register all DI
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAuthRepository, AuthRepository>();
             services.AddTransient<IDrugRepository, DrugRepository>();
             var assembly = AppDomain.CurrentDomain.Load(ApiConstant.ApplicationProjectName);
+            //Add AutoMapper and MediatR
             services.AddMediatR(assembly);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            //JWT Token
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options => {
                     options.TokenValidationParameters = new TokenValidationParameters
@@ -67,7 +71,7 @@ namespace AK.Api
             }
 
             app.UseRouting();
-
+            // Use Authentication for request
             app.UseAuthentication();
             app.UseAuthorization();
             app.EnsureMigrationOfContext<EFDbContext>();

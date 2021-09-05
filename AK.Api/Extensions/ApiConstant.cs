@@ -10,5 +10,8 @@ namespace AK.Api.Extensions
         public const string AuthToken = "AppSettings:Token";
         public const string DbConnectionKey = "DbConnection";
         public const string ApplicationProjectName = "AK.Application";
+        public const string SearchPriceDesc = "price_desc";
+        public const string SearchPrice = "price";
+        public const string SearchCode = "code";
     }
 }
