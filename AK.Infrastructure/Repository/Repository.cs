@@ -56,7 +56,7 @@ namespace AK.Infrastructure.Repository
             return await query.ToListAsync();
         }
 
-        public virtual async Task<T> GetByIdAsync(int id)
+        public virtual async Task<T> GetByIdAsync(string id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
@@ -68,16 +68,17 @@ namespace AK.Infrastructure.Repository
             return entity;
         }
 
-        public async Task UpdateAsync(T entity)
+        public async Task<T> UpdateAsync(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
+            return entity;
         }
 
-        public async Task DeleteAsync(T entity)
+        public async Task<bool> DeleteAsync(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
-            await _dbContext.SaveChangesAsync();
+            return await _dbContext.SaveChangesAsync() > 0;
         }
     }
 }

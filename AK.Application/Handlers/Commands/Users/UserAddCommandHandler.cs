@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
 using AK.Application.Commands.User;
 using AK.Application.DTOs;
 using AK.Domain.Interfaces;
-using AK.Domain.Models;
 
-namespace AK.Application.Handlers.Commands
+namespace AK.Application.Handlers.Commands.User
 {
     public class UserAddCommandHandler : IRequestHandler<UserAddCommand, UserDto>
     {
@@ -24,7 +20,8 @@ namespace AK.Application.Handlers.Commands
         }
         public async Task<UserDto> Handle(UserAddCommand request, CancellationToken cancellationToken)
         {
-            var model = _mapper.Map<User>(request);
+            if (cancellationToken.IsCancellationRequested) return null;
+            var model = _mapper.Map<Domain.Models.User>(request);
             var result = await _repo.AddAsync(model);
             return _mapper.Map<UserDto>(result);
         }

@@ -11,7 +11,9 @@ using AK.Api.Extensions;
 using AK.Application.Commands.User;
 using AK.Application.DTOs;
 using AK.Application.Queries;
+using AK.Application.Queries.User;
 using AK.Domain.Models;
+using Microsoft.Extensions.Logging;
 
 namespace AK.Api.Controllers
 {
@@ -22,21 +24,15 @@ namespace AK.Api.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
+        private readonly ILogger _logger;
 
-        public UserController(IMediator mediator, IMapper mapper)
+        public UserController(IMediator mediator, IMapper mapper,ILogger logger)
         {
             _mediator = mediator;
             _mapper = mapper;
+            _logger = logger;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            //var model = new GetAllUserQuery();
-            //var result = await _mediator.Send(model);
-            //return Ok(result ??= null);
-            return null;
-        }
 
         [HttpGet("{id}", Name = "GetUser")]
         public async Task<IActionResult> Get(Guid id)
@@ -44,16 +40,6 @@ namespace AK.Api.Controllers
             var model = new GetUserByIdQuery(id);
             var result = await _mediator.Send(model);
             return Ok(result ??= null);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Register(UserDto user)
-        {
-            return null;
-
-            //var model = _mapper.Map<UserAddCommand>(user);
-            //var result = await _mediator.Send(model);
-            //return Ok(result ??= null);
         }
 
         [HttpGet]

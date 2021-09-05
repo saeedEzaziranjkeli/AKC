@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Text;
+using System.Threading.Tasks;
 using AK.Api.Extensions;
 using AK.Domain.Interfaces;
 using AK.Infrastructure.Data;
@@ -40,6 +41,7 @@ namespace AK.Api
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAuthRepository, AuthRepository>();
+            services.AddTransient<IDrugRepository, DrugRepository>();
             var assembly = AppDomain.CurrentDomain.Load(ApiConstant.ApplicationProjectName);
             services.AddMediatR(assembly);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -68,7 +70,7 @@ namespace AK.Api
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.EnsureMigrationOfContext<EFDbContext>();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -13,7 +13,15 @@ namespace AK.Infrastructure.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Drug>(
+                eb =>
+                {
+                    eb.Property(b => b.Code).HasMaxLength(30);
+                    eb.Property(b => b.Price).HasColumnType("decimal(18, 2)");
+                    eb.Property(b => b.Label).HasMaxLength(100);
+                });
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Drug> Drugs { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 using MediatR;
 using AK.Application.DTOs;
 
-namespace AK.Application.Queries
+namespace AK.Application.Queries.User
 {
     public class GetUserByIdQuery : IRequest<UserDto>
     {

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
 using AK.Application.DTOs;
-using AK.Application.Queries;
+using AK.Application.Queries.User;
 using AK.Domain.Interfaces;
-using AK.Domain.Models;
 
-namespace AK.Application.Handlers.Queries
+namespace AK.Application.Handlers.Queries.User
 {
     public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, UserDto>
     {
@@ -23,7 +19,7 @@ namespace AK.Application.Handlers.Queries
         }
         public async Task<UserDto> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
         {
-            var model = _mapper.Map<User>(request);
+            var model = _mapper.Map<Domain.Models.User>(request);
             var result = await _repo.GetByIdGu(model.Id);
             var modelDto = _mapper.Map<UserDto>(result);
             return modelDto;
